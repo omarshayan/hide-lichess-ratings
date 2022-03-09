@@ -1,0 +1,20 @@
+{
+
+    "manifest_version": 2,
+    "name": "hide rating",
+    "version": "1.0",
+  
+    "description": "hides opponent rating on lichess.org",
+  
+    "icons": {
+      "48": "icons/icon-48.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.lichess.org/*"],
+        "js": ["hide-rating.js"]
+      }
+    ]
+  }
+  
